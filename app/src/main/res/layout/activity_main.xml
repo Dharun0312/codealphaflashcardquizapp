@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F5FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FLASHCARD QUIZ"
+            android:textColor="#635BCE"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's start learning!"
+            android:textColor="#20213A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/cardCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Card 1 of 5"
+            android:textColor="#635BCE"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:elevation="5dp"
+            android:padding="25dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/cardLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUESTION"
+                android:textColor="#635BCE"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/cardText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What is Java?"
+                android:textColor="#20213A"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="25dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/showAnswerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Answer"
+            android:layout_marginTop="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/previousBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Previous"/>
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="Next"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Flashcard"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Flashcard"/>
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Flashcard"/>
+
+    </LinearLayout>
+
+</ScrollView>
